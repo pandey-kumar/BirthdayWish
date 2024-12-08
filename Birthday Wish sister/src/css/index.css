@@ -396,7 +396,7 @@ body, html{
 	transform: translateY(-40%);
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	font-size:5em;
+	font-size:2em;
 	color:#fff;
 }
 
@@ -732,7 +732,47 @@ body, html{
 	animation-delay: 12000ms;
 }
 
+@media (max-width: 768px) {
+  .third--canvas .center--line {
+    height: 5px; /* Adjust the height for smaller screens */
+  }
 
+  .third--canvas .center--line img {
+    max-width: 15%; /* Reduce image size further on smaller screens */
+  }
+
+  .third--canvas .center--line img#bl--left,
+  .third--canvas .center--line img#bl--right {
+    left: 1em;
+    right: 1em; /* Adjust the margins */
+  }
+
+  .third--canvas .center--line h1 {
+    font-size: 2em; /* Reduce the font size for better visibility */
+  }
+
+  .third--canvas .center--line h1 > span {
+    top: 1em; /* Adjust spacing for mobile screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .third--canvas .center--line {
+    height: 3px; /* Further adjust for very small screens */
+  }
+
+  .third--canvas .center--line img {
+    max-width: 10%; /* Scale images appropriately */
+  }
+
+  .third--canvas .center--line h1 {
+    font-size: 2em; /* Reduce font size for very small screens */
+  }
+
+  .third--canvas .center--line h1 > span {
+    top: 0.5em; /* Reduce spacing */
+  }
+}
 .third--canvas > img{
 	position: absolute;
 	width:auto;
